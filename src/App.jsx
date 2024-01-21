@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
+import Diplomas from "./Components/Diplomas";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home id="home" />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Diplomas" element={<Diplomas />} />
       </Routes>
     </Router>
   );
