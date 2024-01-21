@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: #001931;
+  }
+  
+  header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  header nav > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+  }
+  
+  /* Adjusted styles for the taller underline with a 3px gap */
+  header nav p {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  
+  header nav p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Adjust the height to make the underline taller */
+    bottom: -7px; /* Adjust the bottom property for the 3px gap */
+    left: 0;
+    background-color: #ff9800; /* Change the color to your desired underline color */
+    transform-origin: center;
+    transform: scaleX(0);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  header nav p:hover::after {
+    transform: scaleX(1);
+  }
+  

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inder';
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #001931;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg,rgb(170,167,167),lightgray);
+    border-radius: 20px;
+}
