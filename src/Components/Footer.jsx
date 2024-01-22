@@ -17,16 +17,17 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>SKILLS:</h4>
                     <ul style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>REACT</li>
+                        <li><a>HTML</a></li>
+                        <li><a>CSS</a></li>
+                        <li><a>JS</a></li>
+                        <li><a>REACT</a></li>
                         <ul style={{ listStyleType: 'none', padding: 0 }}></ul>
-                        <li>PYTHON</li>
-                        <li>GIT</li>
-                        <li>GITHUB</li>
-                        <li>FRAMER MOTION</li>
-                        <li>NETLIFY</li>
+                        <li><a>PYTHON</a></li>
+                        <li><a>GIT</a></li>
+                        <li><a>GITHUB</a></li>
+                        <li><a>FRAMER MOTION</a></li>
+                        <li><a>NETLIFY</a></li>
+                        <li><a>PHOTOSHOP CS6</a></li>
                     </ul>
                 </div>
             </div>

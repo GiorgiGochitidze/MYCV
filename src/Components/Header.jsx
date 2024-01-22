@@ -18,19 +18,19 @@ const Header = () => {
         <h3>GIORGI</h3>
 
         <div>
-          <RouterLink onClick={smoothScrollToTop} style={{textDecoration: 'none', color: 'white'}} to="/" smooth={true} duration={1000} offset={-90}>
+          <RouterLink onClick={smoothScrollToTop} style={{textDecoration: 'none', color: 'white'}} to="/" smooth='true' duration={1000} offset={-90}>
             <p>Home</p>
           </RouterLink>
-          <ScrollLink to="about" smooth={true} duration={1000} offset={-90}>
+          <ScrollLink to="about" smooth='true' duration={1000} offset={-90}>
             <p>About Me</p>
           </ScrollLink>
           <RouterLink style={{textDecoration: 'none', color: 'white'}} to="/Diplomas">
             <p>Diplomas</p>
           </RouterLink>
-          <RouterLink style={{textDecoration: 'none', color: 'white'}}k to="projects" smooth={true} duration={1000}>
+          <RouterLink to='/Projects' style={{textDecoration: 'none', color: 'white'}} smooth='true' duration={1000}>
             <p>Projects</p>
           </RouterLink>
-          <ScrollLink to="contact" smooth={true} duration={1000}>
+          <ScrollLink to="contact" smooth='true' duration={1000}>
             <p>Contact Me</p>
           </ScrollLink>
         </div>
