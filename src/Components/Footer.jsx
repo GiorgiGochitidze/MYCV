@@ -30,6 +30,14 @@ const Footer = () => {
                         <li><a>PHOTOSHOP CS6</a></li>
                     </ul>
                 </div>
+
+                <div className="footer-col">
+                    <h4>My Resume PDF Format:</h4>
+                    <ul style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
+                        <li><a href='/My_Resume.pdf' download='My_Resume.pdf'>Resume On English</a></li>
+                        <li><a href='/georgianResume.pdf' download='georgianResume.pdf'>Resume On Georgian</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
    </footer>

@@ -85,7 +85,7 @@ header nav p:hover::after {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 18px;
   margin-top: -250px;
   border-radius: 20px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -118,7 +118,7 @@ header nav p:hover::after {
     display: none;
   }
 
-  .menu-btn, .menu-box, .menu-container{
+  .menu-btn, .menu-container{
     display: flex;
   }
 }

@@ -4,7 +4,7 @@ import "../CSS/header.css";
 import React, { useState } from "react";
 
 const Header = () => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   const smoothScrollToTop = () => {
     scroll.scrollToTop({
