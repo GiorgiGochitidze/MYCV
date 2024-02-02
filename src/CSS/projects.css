@@ -24,7 +24,7 @@
     flex-direction: column;
     word-wrap: break-word;
     color: white;
-    padding-inline: 30px;
+    padding-inline: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: 0.2s all;
 }
@@ -33,9 +33,13 @@
     border-radius: 20px;
 }
 
-.card > img{
-    width: 480px;
+.card img{
+    width: 400px;
 }
+
+/* .card > img{
+    width: 480px;
+} */
 
 .open-btn{
     width: 200px;

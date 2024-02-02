@@ -1,12 +1,13 @@
 .images-container{
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .images-container img{

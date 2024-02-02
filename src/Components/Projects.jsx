@@ -1,57 +1,70 @@
-import '../CSS/projects.css'
-import georgiaprocode1 from '../assets/georgiaprocode1.jpg'
-import tictactoe from '../assets/tictactoe.jpg'
-import ballchallange from '../assets/ballchallange.jpg'
-import regloginform from '../assets/regloginform.jpg'
-import randompass from '../assets/randompass.jpg'
-import randomnum from '../assets/randomnum.jpg'
+import "../CSS/projects.css";
+import georgiaprocode1 from "../assets/georgiaprocode1.jpg";
+import tictactoe from "../assets/tictactoe.jpg";
+import ballchallange from "../assets/ballchallange.jpg";
+import regloginform from "../assets/regloginform.jpg";
+import randompass from "../assets/randompass.jpg";
+import randomnum from "../assets/randomnum.jpg";
+import calculator from "../assets/calculator.jpg";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
-    return ( 
-        <div className='project-cards-container'>
-            <div className="card" style={{width: '500px'}}>
-                <h3>GeorgianProCode</h3>
-                <p style={{textAlign: 'center', marginBottom: '20px'}}>A Website with free programming courses for childrens from 10 years and other ages in georgian</p>
-                <img src={georgiaprocode1} alt="#" />
-                <a href='https://georgianprocode.netlify.app/' target='_blank' className='open-btn'>Open</a>
-            </div>
+  return (
+    <div className="project-cards-container">
+      <ProjectsCard
+        title={"Georgian Pro Code"}
+        description={
+          "A Website with free programming courses for childrens from 10 years and other ages in georgian"
+        }
+        picture={georgiaprocode1}
+        linkto={"https://georgianprocode.netlify.app/"}
+      />
 
-            <div className="card">
-                <h3>GeorgianProCode</h3>
-                <p style={{textAlign: 'center'}}>Tic Tac Toe Game</p>
-                <img style={{width: '300px'}}  target='_blank' src={tictactoe} alt="#" />
-                <a className='open-btn' href='https://tictactoefromgio.netlify.app/' target='_blank'>Open</a>
-            </div>
+      <ProjectsCard
+        title={"Tic Tac Toe"}
+        description={"Tic Tac Toe Game"}
+        picture={tictactoe}
+        linkto={"https://tictactoefromgio.netlify.app/"}
+      />
 
-            <div className="card">
-                <h3>Ball Challange</h3>
-                <p style={{textAlign: 'center'}}>a ball challange where u can undo<br /> and redo balls orientated on logic</p>
-                <img style={{width: '300px'}}  target='_blank' src={ballchallange} alt="#" />
-                <a className='open-btn' href='https://ballchallangebygio.netlify.app/' target='_blank'>Open</a>
-            </div>
+      <ProjectsCard
+        title={"Calculator"}
+        description={"A mini version of calculator"}
+        picture={calculator}
+        linkto={"https://calculatorfromgio.netlify.app/"}
+      />
 
-            <div className="card">
-                <h3>Registration And LogIn Form</h3>
-                <p style={{textAlign: 'center'}}>registration and log in form orientated on logic</p>
-                <img style={{width: '300px'}}  target='_blank' src={regloginform} alt="#" />
-                <a className='open-btn' href='https://regloginfromgio.netlify.app/' target='_blank'>Open</a>
-            </div>
+      <ProjectsCard
+        title={"Ball Challange"}
+        description={`a ball challange where u can undo ${(
+          <br />
+        )} and redo balls orientated on logic`}
+        picture={ballchallange}
+        linkto={"https://ballchallangebygio.netlify.app/"}
+      />
 
-            <div className="card">
-                <h3>Random Password Generator</h3>
-                <p style={{textAlign: 'center'}}>Random Passwords</p>
-                <img style={{width: '300px'}}  target='_blank' src={randompass} alt="#" />
-                <a className='open-btn' href='https://rndpasswordgenerator.netlify.app/' target='_blank'>Open</a>
-            </div>
+      <ProjectsCard
+        title={"Registration And LogIn Form"}
+        description={"registration and log in form orientated on logic"}
+        picture={regloginform}
+        linkto={"https://regloginfromgio.netlify.app/"}
+      />
 
-            <div className="card">
-                <h3>Random Number Generator</h3>
-                <p style={{textAlign: 'center'}}>Random Numbers</p>
-                <img style={{width: '300px'}}  target='_blank' src={randomnum} alt="#" />
-                <a className='open-btn' href='https://rndnumbergen.netlify.app/' target='_blank'>Open</a>
-            </div>
-        </div>
-     );
-}
- 
+      <ProjectsCard
+        title={"Random Password Generator"}
+        description={"Random Passwords"}
+        picture={randompass}
+        linkto={"https://rndpasswordgenerator.netlify.app/"}
+      />
+
+      <ProjectsCard
+        title={"Random Number Generator"}
+        description={"Random Numbers"}
+        picture={randomnum}
+        linkto={"https://rndnumbergen.netlify.app/"}
+      />
+    </div>
+  );
+};
+
 export default Projects;

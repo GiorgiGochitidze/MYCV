@@ -91,14 +91,18 @@
 
 
 @media screen and (max-width: 300px) {
-    .info{
-        word-wrap: break-word;
-        word-break: break-all;
-    }
+
 
     .contactme-button{
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contactme-button{
+        margin: 10px auto;
+        width: 95%;
     }
 }
 
@@ -107,5 +111,18 @@
     width: 100%;
     height: auto;
    }
+}
+
+@media screen and (max-width: 590px){
+    .info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contactme-button{
+        margin: 10px auto;
+    }
 }
 /* short info end */
