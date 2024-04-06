@@ -38,7 +38,7 @@ nav h1{
 
 .hire-btn{
     width: 150px;
-    height: 30px;
+    height: 38px;
     background: linear-gradient(to right, #FD6F00, #E46400);
     border: 0;
     border-radius: 8px;
@@ -46,6 +46,10 @@ nav h1{
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+.hire-btn:hover{
+    cursor: pointer;
 }
 
 .menu-btn{

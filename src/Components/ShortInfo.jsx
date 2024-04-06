@@ -53,7 +53,7 @@ const ShortInfo = () => {
           <motion.a
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{delay: 0.2}}
+            transition={{ delay: 0.2 }}
             href="https://github.com/GiorgiGochitidze"
           >
             <BsGithub
@@ -64,11 +64,12 @@ const ShortInfo = () => {
             />
           </motion.a>
 
-          <motion.a 
-            initial={{opacity: 0, y: 100}}
-            animate={{opacity: 1, y: 0}} 
-            transition={{delay: 0.5}}
-          href="#">
+          <motion.a
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            href="#"
+          >
             <SiGmail
               size={30}
               color={gmailColor}
@@ -93,6 +94,21 @@ const ShortInfo = () => {
             </motion.div>
           )}
         </div>
+
+        <motion.button
+          initial={{ opacity: 0, x: -500 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3 }}
+          style={{ marginRight: "20px" }}
+          className="hire-btn"
+        >
+          Hire Me
+        </motion.button>
+        <motion.button
+                  initial={{ opacity: 0, x: 500 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
+        className="cv-btn">Download CV</motion.button>
       </div>
       <div className="image-container">
         <motion.img

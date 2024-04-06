@@ -69,6 +69,23 @@
     bottom: -30px;
 }
 
+.cv-btn{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid #959595;
+    border-radius: 8px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #959595;
+}
+
+.cv-btn:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 900px){
     .shortInfo-container{
         flex-direction: column;
