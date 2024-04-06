@@ -22,6 +22,7 @@ const Navbar = () => {
         <motion.h1
           initial={{ opacity: 0, x: -1000 }}
           animate={{ opacity: 1, x: 0 }}
+          transition={{delay: 0.2}}
         >
           Giorgi
         </motion.h1>
@@ -74,6 +75,7 @@ const Navbar = () => {
         <motion.button
           initial={{ opacity: 0, x: 500 }}
           animate={{ opacity: 1, x: 0 }}
+          transition={{delay: 0.2}}
           className="hire-btn"
         >
           Hire Me
