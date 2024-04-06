@@ -41,6 +41,7 @@ const ShortInfo = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             href="https://www.facebook.com/giorgi.gochitidze.39/"
+            target="_blank"
           >
             <FaFacebook
               size={30}
@@ -55,6 +56,7 @@ const ShortInfo = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             href="https://github.com/GiorgiGochitidze"
+            target="_blank"
           >
             <BsGithub
               size={30}
@@ -99,16 +101,34 @@ const ShortInfo = () => {
           initial={{ opacity: 0, x: -500 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
-          style={{ marginRight: "20px" }}
-          className="hire-btn"
+          className="hires-btn"
         >
           Hire Me
         </motion.button>
         <motion.button
-                  initial={{ opacity: 0, x: 500 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
-        className="cv-btn">Download CV</motion.button>
+          initial={{ opacity: 0, x: 500 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5 }}
+          className="cv-btn"
+        >
+          Download CV
+        </motion.button>
+
+        <motion.div
+        initial={{opacity: 0, y: 500}}
+        animate={{opacity: 1, y: 0}}
+        transition={{delay: 0.2, duration: 0.5}}
+        className="experience-projects-container">
+          <p>
+            <span style={{color: '#FD6F00'}}>1+</span> <br /> <br />
+            <span style={{color: '#DFDFDF'}}>Experience</span>
+          </p>
+            <hr />
+          <p>
+            <span style={{color: '#FD6F00'}}>30+</span> <br /> <br />
+            <span style={{color: '#DFDFDF'}}>Projects Done</span>
+          </p>
+        </motion.div>
       </div>
       <div className="image-container">
         <motion.img
