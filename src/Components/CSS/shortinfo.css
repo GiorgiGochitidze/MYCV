@@ -1,0 +1,114 @@
+.shortInfo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-info-container{
+    width: 100%;
+    height: 300px;
+    padding-inline: 30px;
+}
+
+.text-info-container p{
+    color: #707070;
+}
+
+.text-info-container h2{
+    color: #959595;
+}
+
+.text-info-container h1{
+    background: linear-gradient(to right, #984300, #FD6F00, #CA5900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-clip: text;
+    text-shadow: 0px 0px 20px rgba(253, 111, 0, 0.5);
+    margin-top: 20px;
+}
+
+.image-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    width: 400px;
+}
+
+.socialLinks-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding-block: 20px;
+    position: relative;
+}
+
+.socialLinks-container a:first-of-type{
+    margin-left: 50px;
+}
+
+.gamil-container{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    background-color: #1E1E1E;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    left: 40px;
+    text-align: center;
+    bottom: -30px;
+}
+
+@media screen and (max-width: 900px){
+    .shortInfo-container{
+        flex-direction: column;
+    }
+
+    .text-info-container{
+        text-align: center;
+    }
+
+    .socialLinks-container{
+        justify-content: center;
+    }
+
+
+    .socialLinks-container a:first-of-type{
+        margin-left: 0;
+    }
+
+    .text-info-container{
+        padding: 0;
+    }
+
+    .gamil-container{
+        width: 100%;
+        height: 40px;
+        top: 100px;
+        left: 0;
+        bottom: -30px;
+        box-sizing: border-box;
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 288px) {
+
+    .gamil-container{
+        height: auto;
+    }
+
+    .socialLinks-container{
+        height: 100px;
+    }
+}

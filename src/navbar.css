@@ -1,0 +1,90 @@
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-container{
+    width: auto;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 60px;
+}
+
+.links-container p{
+    transition: 0.2s all;
+}
+
+.links-container p:hover{
+    cursor: pointer;
+}
+
+nav h1{
+    background: linear-gradient(to right, #fa6100, #e60026);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-clip: text;
+}
+
+
+.hire-btn{
+    width: 150px;
+    height: 30px;
+    background: linear-gradient(to right, #FD6F00, #E46400);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.menu-btn{
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+
+    header{
+        height: auto;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding-block: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    nav{
+        flex-direction: row;
+        padding-inline: 10px;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    .hire-btn{
+        display: none;
+    }
+
+    .links-container{
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Georgian';
+  src: url('./Components/CSS/Fonts/bpg_extrasquare_mtavruli_2009.ttf');
+}
+
+body{
+  height: 100vh;
+}
