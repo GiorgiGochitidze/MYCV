@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import "./navbar.css";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   // State to manage the active item
@@ -18,40 +19,65 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <h1>Giorgi</h1>
+        <motion.h1
+          initial={{ opacity: 0, x: -1000 }}
+          animate={{ opacity: 1, x: 0 }}
+        >
+          Giorgi
+        </motion.h1>
         <div className="links-container">
-          <p
+          <motion.p
+            initial={{ opacity: 0, y: -500 }}
+            animate={{ opacity: 1, y: 0 }}
             style={getNavItemColor("Home")}
             onClick={() => handleItemClick("Home")}
           >
             Home
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -500 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
             style={getNavItemColor("About Me")}
             onClick={() => handleItemClick("About Me")}
           >
             About Me
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -500 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
             style={getNavItemColor("Diplomas")}
             onClick={() => handleItemClick("Diplomas")}
           >
             Diplomas
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -500 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
             style={getNavItemColor("Projects")}
             onClick={() => handleItemClick("Projects")}
           >
             Projects
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -500 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
             style={getNavItemColor("Contact Me")}
             onClick={() => handleItemClick("Contact Me")}
           >
             Contact Me
-          </p>
+          </motion.p>
         </div>
-        <button className="hire-btn">Hire Me</button>
+        <motion.button
+          initial={{ opacity: 0, x: 500 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="hire-btn"
+        >
+          Hire Me
+        </motion.button>
         <p className="menu-btn">MENU</p>
       </nav>
     </header>

@@ -24,10 +24,6 @@ nav{
     gap: 60px;
 }
 
-.links-container p{
-    transition: 0.2s all;
-}
-
 .links-container p:hover{
     cursor: pointer;
 }
