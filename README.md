@@ -1,8 +1,13 @@
-# React + Vite
+<h1>Hi I'm Giorgi A Junior React Developer</h1>
+<p>If you intrested with me who i am you can check my website, <br />
+where you can see about me, what i do, what skills i have, what types of projects i have.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo Link: https://giorgig.netlify.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Libraries Used:</h2>
+1. React Router
+2. React Icons
+3. Framer Motion
+4. React-Scroll
+5. AOS - Animate On Scroll
+6. React Responsive
