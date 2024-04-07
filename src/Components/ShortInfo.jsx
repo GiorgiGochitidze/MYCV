@@ -115,13 +115,13 @@ const ShortInfo = () => {
         </motion.button>
 
         <motion.div
-        initial={{opacity: 0, y: 500}}
+        initial={{opacity: 0, y: 200}}
         animate={{opacity: 1, y: 0}}
         transition={{delay: 0.2, duration: 0.5}}
         className="experience-projects-container">
           <p>
             <span style={{color: '#FD6F00'}}>1+</span> <br /> <br />
-            <span style={{color: '#DFDFDF'}}>Experience</span>
+            <span style={{color: '#DFDFDF'}}>Years Experience</span>
           </p>
             <hr />
           <p>

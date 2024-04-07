@@ -22,7 +22,7 @@ const Navbar = () => {
         <motion.h1
           initial={{ opacity: 0, x: -1000 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{delay: 0.2}}
+          transition={{ delay: 0.2 }}
         >
           Giorgi
         </motion.h1>
@@ -39,20 +39,21 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -500 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            style={getNavItemColor("About Me")}
-            onClick={() => handleItemClick("About Me")}
+            style={getNavItemColor("Services")}
+            onClick={() => handleItemClick("Services")}
           >
-            About Me
+            Services
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: -500 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            style={getNavItemColor("Diplomas")}
-            onClick={() => handleItemClick("Diplomas")}
+            style={getNavItemColor("About Me")}
+            onClick={() => handleItemClick("About Me")}
           >
-            Diplomas
+            About Me
           </motion.p>
+
           <motion.p
             initial={{ opacity: 0, y: -500 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,7 +76,7 @@ const Navbar = () => {
         <motion.button
           initial={{ opacity: 0, x: 500 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{delay: 0.2}}
+          transition={{ delay: 0.2 }}
           className="hire-btn"
         >
           Hire Me
