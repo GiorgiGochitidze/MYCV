@@ -9,10 +9,10 @@ import planetsfactsite from '../assets/planetsfactsite.jpg'
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-container">
-      <h1>Portfolio</h1>
+    <div id="portfolio" className="portfolio-container">
+      <h1 data-aos="fade-up">Portfolio</h1>
 
-      <p style={{ color: "#959595", textAlign: "center", marginBlock: "20px" }}>
+      <p data-aos="fade-up" data-aos-delay="150" style={{ color: "#959595", textAlign: "center", marginBlock: "20px" }}>
         Here you will see my big projects or projects with different logics
         <br />
         others you can see on my GitHub Profile

@@ -8,11 +8,11 @@ import { IoLogoGithub } from "react-icons/io";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme-container">
-      <h1>About Me</h1>
-      <p>Junior React Developer and starter Full-Stack Developer</p>
+    <div id="aboutMe" className="aboutme-container">
+      <h1 data-aos="fade-up">About Me</h1>
+      <p data-aos="fade-up" data-aos-delay="150">Junior React Developer and starter Full-Stack Developer</p>
 
-      <p className="aboutme-text">
+      <p data-aos="fade-up" data-aos-delay="250" className="aboutme-text">
         Hi, I'm Giorgi, a beginner React web developer with 1 years of
         programming experience. Proficient in React, JavaScript, HTML, CSS,
         Python, NodeJS(basics such as registration/login, saving data and so
@@ -27,7 +27,7 @@ const AboutMe = () => {
         determination to make a significant impact in web development is
         unwavering.
       </p>
-      <button className="download-cv">Download CV</button>
+      <button data-aos="fade-up" data-aos-delay="300" className="download-cv">Download CV</button>
 
       <div className="skills-container">
         <div data-aos="fade-up" className="skills-card">

@@ -1,6 +1,7 @@
 import "./Components/CSS/navbar.css";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   // State to manage the active item
@@ -17,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header id="navbar">
       <nav>
         <motion.h1
           initial={{ opacity: 0, x: -1000 }}
@@ -33,45 +34,87 @@ const Navbar = () => {
             style={getNavItemColor("Home")}
             onClick={() => handleItemClick("Home")}
           >
-            Home
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: -500 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            style={getNavItemColor("Services")}
-            onClick={() => handleItemClick("Services")}
-          >
-            Services
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: -500 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            style={getNavItemColor("About Me")}
-            onClick={() => handleItemClick("About Me")}
-          >
-            About Me
+            <Link
+              to="navbar"
+              smooth={true}
+              duration={800}
+              onClick={() => handleItemClick("Home")}
+            >
+              Home
+            </Link>
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0, y: -500 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            style={getNavItemColor("Projects")}
+          <Link
+            to="services"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            onClick={() => handleItemClick("Services")}
+          >
+            <motion.p
+              initial={{ opacity: 0, y: -500 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              style={getNavItemColor("Services")}
+              onClick={() => handleItemClick("Services")}
+            >
+              Services
+            </motion.p>
+          </Link>
+
+          <Link
+            to="aboutMe"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            onClick={() => handleItemClick("About Me")}
+          >
+            <motion.p
+              initial={{ opacity: 0, y: -500 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              style={getNavItemColor("About Me")}
+              onClick={() => handleItemClick("About Me")}
+            >
+              About Me
+            </motion.p>
+          </Link>
+
+          <Link
+            to="portfolio"
+            smooth={true}
+            duration={800}
+            offset={-80}
             onClick={() => handleItemClick("Projects")}
           >
-            Projects
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: -500 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            style={getNavItemColor("Contact Me")}
+            <motion.p
+              initial={{ opacity: 0, y: -500 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              style={getNavItemColor("Projects")}
+              onClick={() => handleItemClick("Projects")}
+            >
+              Portfolio
+            </motion.p>
+          </Link>
+
+          <Link
+            to="contactMe"
+            smooth={true}
+            duration={800}
+            offset={-80}
             onClick={() => handleItemClick("Contact Me")}
           >
-            Contact Me
-          </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: -500 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              style={getNavItemColor("Contact Me")}
+              onClick={() => handleItemClick("Contact Me")}
+            >
+              Contact Me
+            </motion.p>
+          </Link>
         </div>
         <motion.button
           initial={{ opacity: 0, x: 500 }}
@@ -81,7 +124,10 @@ const Navbar = () => {
         >
           Hire Me
         </motion.button>
-        <p className="menu-btn">MENU</p>
+        <motion.p
+        initial={{opacity: 0, x: 500}}
+        animate={{opacity: 1, x: 0}}
+        className="menu-btn">MENU</motion.p>
       </nav>
     </header>
   );

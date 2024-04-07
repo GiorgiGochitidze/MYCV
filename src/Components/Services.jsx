@@ -7,7 +7,7 @@ import { CgPerformance } from "react-icons/cg";
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <div id="services" className="services-container">
       <h1 data-aos="fade-up">Services</h1>
       <p data-aos="fade-up" data-aos-delay="200">Explore My Offerings</p>
 
