@@ -5,9 +5,12 @@ where you can see about me, what i do, what skills i have, what types of project
 Demo Link: https://giorgig.netlify.app/
 
 <h2>Libraries Used:</h2>
-1. React Router
-2. React Icons
-3. Framer Motion
-4. React-Scroll
-5. AOS - Animate On Scroll
-6. React Responsive
+
+<ol type="1">
+  <li>React Router</li>
+  <li>React Icons</li>
+  <li>Framer Motion</li>
+  <li>React-Scroll</li>
+  <li>AOS - Animate On Scroll</li>
+  <li>React Responsive</li>
+</ol>
