@@ -37,6 +37,14 @@
     border: 0;
     border-radius: 8px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgian', sans-serif;
+}
+
+.download-cv:hover{
+    cursor: pointer;
 }
 
 .skills-container{

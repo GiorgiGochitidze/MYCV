@@ -57,6 +57,38 @@ nav h1{
     color: white;
 }
 
+.menu-btn:hover{
+    cursor: pointer;
+}
+
+.navmenu-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 50;
+    top: 0px;
+}
+
+.navmenu-dropbox{
+    width: 400px;
+    height: 450px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navmenu-dropbox p:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
 
     header{
@@ -86,5 +118,28 @@ nav h1{
 
     .links-container{
         display: none;
+    }
+
+    header{
+        position: fixed;
+        z-index: 999;
+        background: #1E1E1E;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .navmenu-container{
+        display: none;
+    }
+
+    .navmenu-dropbox{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .navmenu-dropbox{
+        width: 90%;
     }
 }

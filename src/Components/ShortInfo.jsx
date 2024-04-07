@@ -5,8 +5,9 @@ import { SiGmail } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
-const ShortInfo = () => {
+const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
   const [facebookColor, setFacebookColor] = useState("gray");
   const [githubColor, setGithubColor] = useState("gray");
   const [gmailColor, setGmailColor] = useState("gray");
@@ -97,36 +98,43 @@ const ShortInfo = () => {
           )}
         </div>
 
-        <motion.button
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.3 }}
-          className="hires-btn"
-        >
-          Hire Me
-        </motion.button>
+        <Link to="contactMe" smooth={true} duration={800} offset={-80}>
+          <motion.button
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+            className="hires-btn"
+          >
+            Hire Me
+          </motion.button>
+        </Link>
+
         <motion.button
           initial={{ opacity: 0, x: 500 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
           className="cv-btn"
+          onClick={() =>
+            cvDownload ? setCvDownload(false) : setCvDownload(true)
+          }
         >
           Download CV
         </motion.button>
 
         <motion.div
-        initial={{opacity: 0, y: 200}}
-        animate={{opacity: 1, y: 0}}
-        transition={{delay: 0.2, duration: 0.5}}
-        className="experience-projects-container">
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="experience-projects-container"
+        >
           <p>
-            <span style={{color: '#FD6F00'}}>1+</span> <br /> <br />
-            <span style={{color: '#DFDFDF'}}>Years Experience</span>
+            <span style={{ color: "#FD6F00" }}>1+</span> <br /> <br />
+            <span style={{ color: "#DFDFDF" }}>Years Experience</span>
           </p>
-            <hr />
+          <hr />
           <p>
-            <span style={{color: '#FD6F00'}}>30+</span> <br /> <br />
-            <span style={{color: '#DFDFDF'}}>Projects Done</span>
+            <span style={{ color: "#FD6F00" }}>10+</span> <br /> <br />
+            <span style={{ color: "#DFDFDF" }}>Projects Done</span>
           </p>
         </motion.div>
       </div>

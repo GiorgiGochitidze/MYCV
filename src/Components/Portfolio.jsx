@@ -22,14 +22,13 @@ const Portfolio = () => {
         <div data-aos="fade-right" className="portfolio-card">
           <img style={{width: '100%', marginTop: '-15px'}} src={planetsfactsite} alt="planets fact size img" />
 
-          <h3>GeorgiaProCode</h3>
+          <h3>Planets Fact Site</h3>
 
           <p>
-            A Website with free programming courses for childrens from 10 years
-            and other ages at georgian
+            Here You will see a facts about planets designed with comfortable UI/UX
           </p>
 
-          <a target="_blank" href="https://georgianprocode.netlify.app/">
+          <a target="_blank" href="https://planetsfactfromgio.netlify.app/">
             Open
           </a>
         </div>

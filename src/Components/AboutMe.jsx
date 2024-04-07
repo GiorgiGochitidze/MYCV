@@ -6,7 +6,7 @@ import { FiFramer } from "react-icons/fi";
 import { SiAdobephotoshop } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 
-const AboutMe = () => {
+const AboutMe = ({cvDownload, setCvDownload}) => {
   return (
     <div id="aboutMe" className="aboutme-container">
       <h1 data-aos="fade-up">About Me</h1>
@@ -27,7 +27,7 @@ const AboutMe = () => {
         determination to make a significant impact in web development is
         unwavering.
       </p>
-      <button data-aos="fade-up" data-aos-delay="300" className="download-cv">Download CV</button>
+      <button onClick={() => cvDownload ? setCvDownload(false) : setCvDownload(true)} data-aos="fade-up" data-aos-delay="300" className="download-cv">Download CV</button>
 
       <div className="skills-container">
         <div data-aos="fade-up" className="skills-card">
