@@ -4,6 +4,7 @@ import Services from './Services';
 import ShortInfo from './ShortInfo';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AboutMe from './AboutMe';
 
 
 const Home = () => {
@@ -17,6 +18,8 @@ const Home = () => {
             <ShortInfo />
 
             <Services />
+
+            <AboutMe />
         </main>
      );
 }

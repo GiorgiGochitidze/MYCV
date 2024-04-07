@@ -1,0 +1,64 @@
+.aboutme-container{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme-container h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutme-container p:first-of-type{
+    color: #707070;
+    text-align: center;
+}
+
+.aboutme-text{
+    width: auto;
+    max-width: 400px;
+    color: #707070;
+    text-align: justify;
+    margin: 20px auto;
+    padding-inline: 10px;
+}
+
+.download-cv{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    background-color: #FD6F00;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.skills-container{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-block: 20px;
+}
+
+.skills-card{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #FD6F00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+    color: white;
+}

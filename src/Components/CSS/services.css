@@ -25,6 +25,7 @@
     grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .services-cards{
