@@ -1,4 +1,4 @@
-import { FaCss3, FaGitAlt, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { FaCss3, FaFigma, FaGitAlt, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import "./CSS/aboutme.css";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -64,6 +64,10 @@ const AboutMe = ({cvDownload, setCvDownload}) => {
 
         <div data-aos="fade-up" data-aos-delay="450" className="skills-card">
           <FiFramer size={50} color="white" />
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="500" className="skills-card">
+          <FaFigma size={50} color="white" />
         </div>
 
         <div data-aos="fade-up" data-aos-delay="500" className="skills-card">
