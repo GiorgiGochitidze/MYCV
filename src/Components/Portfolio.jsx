@@ -3,7 +3,7 @@ import "./CSS/portfolio.css";
 import { GiTicTacToe } from "react-icons/gi";
 import { SlCalculator } from "react-icons/sl";
 import { IoIosFootball } from "react-icons/io";
-import { Md123, MdLogin } from "react-icons/md";
+import { Md123, MdLogin, MdModeOfTravel } from "react-icons/md";
 import { TbPasswordUser } from "react-icons/tb";
 import planetsfactsite from '../assets/planetsfactsite.jpg'
 
@@ -19,6 +19,24 @@ const Portfolio = () => {
       </p>
 
       <div className="portfolio-list">
+
+      <div data-aos="fade-right" className="portfolio-card">
+
+          <MdModeOfTravel size={50} color="white" />
+
+          <h3>TravelPulse</h3>
+
+          <p>In Progress</p>
+
+          <p>
+            Here you can share and view a stories about travel beautiful places and alot more
+          </p>
+
+          <a target="_blank" href="https://travelpulse.netlify.app/">
+            Open
+          </a>
+        </div>
+
         <div data-aos="fade-right" className="portfolio-card">
           <img style={{width: '100%', marginTop: '-15px'}} src={planetsfactsite} alt="planets fact size img" />
 

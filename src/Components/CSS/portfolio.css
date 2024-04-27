@@ -56,6 +56,7 @@
 
 .portfolio-card p{
     color: #959595;
+    margin-inline: 5px;
 }
 
 @media screen and (max-width: 965px) {
