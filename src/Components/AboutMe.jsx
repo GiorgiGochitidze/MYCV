@@ -3,8 +3,9 @@ import { FaHtml5 } from "react-icons/fa";
 import "./CSS/aboutme.css";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FiFramer } from "react-icons/fi";
-import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobephotoshop, SiMongodb } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
+import { BiLogoNetlify } from "react-icons/bi";
 
 const AboutMe = ({cvDownload, setCvDownload}) => {
   return (
@@ -77,6 +78,18 @@ const AboutMe = ({cvDownload, setCvDownload}) => {
 
         <div data-aos="fade-up" data-aos-delay="550" className="skills-card">
           <IoLogoGithub size={50} color="white" />
+        </div>
+
+        <div title="MongoDB" data-aos="fade-up" data-aos-delay="550" className="skills-card">
+          <SiMongodb size={50} color="white" />
+        </div>
+
+        <div title="MongoDB" data-aos="fade-up" data-aos-delay="550" className="skills-card">
+          <BiLogoNetlify size={50} color="white" />
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="600" className="skills-card">
+          <p style={{color: 'white'}}>MERN <br /> Stack</p>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="600" className="skills-card">
