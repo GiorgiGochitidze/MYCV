@@ -30,7 +30,7 @@ const Portfolio = () => {
           <p>In Progress</p>
 
           <p>
-            Here you can share and view a stories about travel beautiful places and alot more
+            Here you can share and view a stories about travel beautiful places and alot more, made on MERN Stack
           </p>
 
           <a target="_blank" href="https://travelpulse.netlify.app/">
@@ -58,7 +58,8 @@ const Portfolio = () => {
           <h3>MelinaMShop</h3>
 
           <p>
-            A website for selling restaurant products and more
+            A website for selling restaurant products and more, made on MERN Stack  <br />
+            Launched in 01.05.2024
           </p>
 
           <a target="_blank" href="https://melinamshop.netlify.app/">
@@ -72,7 +73,8 @@ const Portfolio = () => {
           <h3>NaziSHop</h3>
 
           <p>
-            A website for selling jewelry's and more
+            A website for selling jewelry's and more, made on MERN Stack
+            Launched in 31.04.2024
           </p>
 
           <a target="_blank" href="https://nazishop.netlify.app/">
