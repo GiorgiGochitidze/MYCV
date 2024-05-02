@@ -12,6 +12,7 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
   const [githubColor, setGithubColor] = useState("gray");
   const [gmailColor, setGmailColor] = useState("gray");
   const [gmailState, setGmailState] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="shortInfo-container">
@@ -33,8 +34,10 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
           initial={{ opacity: 0, x: -500 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
+          onMouseEnter={() => setExpanded(true)}
+          onMouseLeave={() => setExpanded(false)}
         >
-          Junior React Developer
+         {!expanded && <span>MERN</span>} <motion.span initial={{opacity: 0, width: 0}} animate={{opacity: 1, width: 'auto'}} className={expanded ? "expanded" : "hidden"}>MongoDB, ExpressJS, React, NodeJS</motion.span> Stack Developer
         </motion.h1>
 
         <div className="socialLinks-container">
@@ -128,7 +131,7 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
           className="experience-projects-container"
         >
           <p>
-            <span style={{ color: "#FD6F00" }}>1+</span> <br /> <br />
+            <span style={{ color: "#FD6F00" }}>1.6+</span> <br /> <br />
             <span style={{ color: "#DFDFDF" }}>Years Experience</span>
           </p>
           <hr />

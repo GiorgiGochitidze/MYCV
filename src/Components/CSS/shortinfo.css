@@ -40,6 +40,14 @@
     width: 400px;
 }
 
+.hidden {
+    display: none;
+  }
+  
+  .expanded {
+    display: inline;
+  }
+
 .socialLinks-container{
     width: 100%;
     height: 40px;
