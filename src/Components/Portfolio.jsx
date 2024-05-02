@@ -6,6 +6,7 @@ import { IoIosFootball } from "react-icons/io";
 import { Md123, MdLogin, MdModeOfTravel } from "react-icons/md";
 import { TbPasswordUser } from "react-icons/tb";
 import planetsfactsite from '../assets/planetsfactsite.jpg'
+import { CiShop } from "react-icons/ci";
 
 const Portfolio = () => {
   return (
@@ -47,6 +48,34 @@ const Portfolio = () => {
           </p>
 
           <a target="_blank" href="https://planetsfactfromgio.netlify.app/">
+            Open
+          </a>
+        </div>
+
+        <div data-aos="fade-down" data-aos-delay="100" className="portfolio-card">
+          <CiShop size={50} color="white" />
+
+          <h3>MelinaMShop</h3>
+
+          <p>
+            A website for selling restaurant products and more
+          </p>
+
+          <a target="_blank" href="https://melinamshop.netlify.app/">
+            Open
+          </a>
+        </div>
+
+        <div data-aos="fade-down" data-aos-delay="100" className="portfolio-card">
+          <CiShop size={50} color="white" />
+
+          <h3>NaziSHop</h3>
+
+          <p>
+            A website for selling jewelry's and more
+          </p>
+
+          <a target="_blank" href="https://nazishop.netlify.app/">
             Open
           </a>
         </div>
