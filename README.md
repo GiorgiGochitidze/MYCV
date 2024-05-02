@@ -1,4 +1,4 @@
-<h1>Hi I'm Giorgi A Junior React Developer</h1>
+<h1>Hi I'm Giorgi A MERN Stack Developer</h1>
 <p>If you intrested with me who i am you can check my website, <br />
 where you can see about me, what i do, what skills i have, what types of projects i have.</p>
 
