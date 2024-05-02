@@ -143,3 +143,9 @@ nav h1{
         width: 90%;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 1vw;
+    }
+}

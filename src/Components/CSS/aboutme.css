@@ -70,3 +70,10 @@
     transition: 0.5s all;
     color: white;
 }
+
+@media screen and (min-width: 1200px) {
+    .aboutme-text{
+        width: 1000px;
+        max-width: none;
+    }
+}

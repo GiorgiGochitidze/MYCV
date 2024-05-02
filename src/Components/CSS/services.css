@@ -19,13 +19,14 @@
 }
 
 .services-list{
-    width: 100%;
+    width: auto;
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
     overflow: hidden;
+    gap: 50px;
 }
 
 .services-cards{

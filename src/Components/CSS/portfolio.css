@@ -14,11 +14,12 @@
 }
 
 .portfolio-list{
-    width: 100%;
+    width: auto;
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
+    gap: 50px;
 }
 
 .portfolio-card{
