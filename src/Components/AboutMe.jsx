@@ -23,7 +23,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
       </p>
 
       <p data-aos="fade-up" data-aos-delay="250" className="aboutme-text">
-        Hi, I'm Giorgi, a beginner React web developer with 1.6 years of
+        Hi, I'm Giorgi, a MERN Stack developer with 1.6 years of
         programming experience. Proficient in MERN Stack (MongoDB, ExpressJS,
         React, NodeJS), React, JavaScript, HTML, CSS, Python, NodeJS, Netlify,
         Git, Github, Render.com(for hosting backend server), Photoshop CS6,
