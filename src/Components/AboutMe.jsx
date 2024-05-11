@@ -18,51 +18,56 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
   return (
     <div id="aboutMe" className="aboutme-container">
       <div className="about-text-container">
-        <p
-          style={{ textAlign: "justify" }}
-          data-aos="fade-up"
-          data-aos-delay="250"
-          className="aboutme-text"
-        >
+        <div>
           <h1 data-aos="fade-up">About Me</h1>
-          Hi, I'm Giorgi, a MERN Stack developer with 1.6 years of programming
-          experience. Proficient in MERN Stack (MongoDB, ExpressJS, React,
-          NodeJS), React, JavaScript, HTML, CSS, Python, NodeJS, Netlify, Git,
-          Github, Render.com(for hosting backend server), Photoshop CS6,
-          MongoDB(NoSQL database), Framer Motion(for making beauiful animations)
-          AOS(for making animations on scroll), Cloudinary(cloud service for
-          uploading images when deploying site ), I'm good in solving complex
-          problems efficiently, my main focus is MERN Stack development Beyond
-          coding, I learning about business to enhance my skills. I'm eager to
-          collaborate with experienced developers and designers to bring
-          innovative web projects to life. Despite a short project list, my
-          determination to make a significant impact in web development is
-          unwavering.
-        </p>
+          <p
+            style={{ textAlign: "justify" }}
+            data-aos="fade-up"
+            data-aos-delay="250"
+            className="aboutme-text"
+          >
+            Hi, I'm Giorgi, a MERN Stack developer with 1.6 years of programming
+            experience. Proficient in MERN Stack (MongoDB, ExpressJS, React,
+            NodeJS), React, JavaScript, HTML, CSS, Python, NodeJS, Netlify, Git,
+            Github, Render.com(for hosting backend server), Photoshop CS6,
+            MongoDB(NoSQL database), Framer Motion(for making beauiful
+            animations) AOS(for making animations on scroll), Cloudinary(cloud
+            service for uploading images when deploying site ), I'm good in
+            solving complex problems efficiently, my main focus is MERN Stack
+            development Beyond coding, I learning about business to enhance my
+            skills. I'm eager to collaborate with experienced developers and
+            designers to bring innovative web projects to life. Despite a short
+            project list, my determination to make a significant impact in web
+            development is unwavering.
+          </p>
+        </div>
 
-        <p data-aos="fade-up" data-aos-delay="250" className="aboutme-text">
+        <div>
           <h1 data-aos="fade-up">Why Me</h1>
-          If you are here it means you're intrested in what i doing. Let me
-          explain why you should choose me and what you might miss out on if you
-          decide otherwise.
-          <br />
-          Firstly i have a strong foundation of understanding how MERN stack
-          works both in theory and practice, i orientated to gain more knowledge
-          from practice, always use resources at maximum to impress users with
-          UI/UX and make, apps comfortable to use and learn something new every
-          day. <br />
-          Secondly i'm good in solving complex problems in short period of time
-          using as my knowledges as other services such as chatGPT, copilot and
-          other platforms, develop apps as fast as its possible with high
-          performance, also i have experience in working with team and project
-          managment.
-          <br />
-          So what if you decide not to choose me? <br />
-          You'd be passing up on a developer who is quick-witted, adaptable, and
-          always striving for improvement. I'm ready to maximizie the potential
-          of every project I take.
-        </p>
+          <p style={{textAlign: 'justify'}} data-aos="fade-up" data-aos-delay="250" className="aboutme-text">
+            If you are here it means you're intrested in what i doing. Let me
+            explain why you should choose me and what you might miss out on if
+            you decide otherwise.
+            <br />
+            Firstly i have a strong foundation of understanding how MERN stack
+            works both in theory and practice, i orientated to gain more
+            knowledge from practice, always use resources at maximum to impress
+            users with UI/UX and make, apps comfortable to use and learn
+            something new every day. <br />
+            Secondly i'm good in solving complex problems in short period of
+            time using as my knowledges as other services such as chatGPT,
+            copilot and other platforms, develop apps as fast as its possible
+            with high performance, also i have experience in working with team
+            and project managment.
+            <br />
+            So what if you decide not to choose me? <br />
+            You'd be passing up on a developer who is quick-witted, adaptable,
+            and always striving for improvement. I'm ready to maximizie the
+            potential of every project I take.
+          </p>
+        </div>
       </div>
+
       <button
         onClick={() =>
           cvDownload ? setCvDownload(false) : setCvDownload(true)
