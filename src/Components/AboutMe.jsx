@@ -47,7 +47,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
           decide otherwise.
           <br />
           Firstly i have a strong foundation of understanding how MERN stack
-          forks both in theory and practice, i orientated to gain more knowledge
+          works both in theory and practice, i orientated to gain more knowledge
           from practice, always use resources at maximum to impress users with
           UI/UX and make, apps comfortable to use and learn something new every
           day. <br />
