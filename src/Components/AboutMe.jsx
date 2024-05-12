@@ -13,6 +13,7 @@ import { FiFramer } from "react-icons/fi";
 import { SiAdobephotoshop, SiMongodb } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 import { BiLogoNetlify } from "react-icons/bi";
+import { SiCloudinary } from "react-icons/si";
 
 const AboutMe = ({ cvDownload, setCvDownload }) => {
   return (
@@ -166,9 +167,18 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         </div>
 
         <div
+          title="ClOUDINARY"
+          data-aos="fade-up"
+          data-aos-delay="550"
+          className="skills-card"
+        >
+          <SiCloudinary size={50} color="white" />
+        </div>
+
+        <div
           title="GIT"
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="600"
           className="skills-card"
         >
           <FaGitAlt size={50} color="white" />
@@ -177,7 +187,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         <div
           title="GITHUB"
           data-aos="fade-up"
-          data-aos-delay="550"
+          data-aos-delay="650"
           className="skills-card"
         >
           <IoLogoGithub size={50} color="white" />
@@ -186,7 +196,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         <div
           title="MongoDB"
           data-aos="fade-up"
-          data-aos-delay="550"
+          data-aos-delay="700"
           className="skills-card"
         >
           <SiMongodb size={50} color="white" />
@@ -195,7 +205,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         <div
           title="NETLIFY"
           data-aos="fade-up"
-          data-aos-delay="550"
+          data-aos-delay="750"
           className="skills-card"
         >
           <BiLogoNetlify size={50} color="white" />
@@ -204,7 +214,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         <div
           title="MERN - MongoDB, ExpressJS, React, NodeJS"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="800"
           className="skills-card"
         >
           <p style={{ color: "white" }}>
@@ -215,7 +225,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         <div
           title="RENDER"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="850"
           className="skills-card"
         >
           <p style={{ color: "white" }}>Render.com</p>
