@@ -13,9 +13,8 @@ import { FiFramer } from "react-icons/fi";
 import { SiAdobephotoshop, SiMongodb } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 import { BiLogoNetlify } from "react-icons/bi";
-import { SiCloudinary } from "react-icons/si";
 
-const AboutMe = ({ cvDownload, setCvDownload }) => {
+const AboutMe = () => {
   return (
     <div id="aboutMe" className="aboutme-container">
       <div className="about-text-container">
@@ -45,7 +44,12 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
 
         <div>
           <h1 data-aos="fade-up">Why Me</h1>
-          <p style={{textAlign: 'justify'}} data-aos="fade-up" data-aos-delay="250" className="aboutme-text">
+          <p
+            style={{ textAlign: "justify" }}
+            data-aos="fade-up"
+            data-aos-delay="250"
+            className="aboutme-text"
+          >
             If you are here it means you're intrested in what i doing. Let me
             explain why you should choose me and what you might miss out on if
             you decide otherwise.
@@ -69,16 +73,15 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
         </div>
       </div>
 
-      <button
-        onClick={() =>
-          cvDownload ? setCvDownload(false) : setCvDownload(true)
-        }
+      <a
+        href="/My_Resume.pdf"
+        download="My_Resume.pdf"
         data-aos="fade-up"
         data-aos-delay="300"
         className="download-cv"
       >
         Download CV
-      </button>
+      </a>
 
       <div className="skills-container">
         <div title="HTML" data-aos="fade-up" className="skills-card">
@@ -172,7 +175,7 @@ const AboutMe = ({ cvDownload, setCvDownload }) => {
           data-aos-delay="550"
           className="skills-card"
         >
-          <SiCloudinary size={50} color="white" />
+          <p style={{color: "white"}}>Cloudinary</p>
         </div>
 
         <div

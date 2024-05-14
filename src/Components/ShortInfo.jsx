@@ -1,16 +1,17 @@
 import "./CSS/shortinfo.css";
 import triangle from "../assets/image.png";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
+const ShortInfo = () => {
   const [facebookColor, setFacebookColor] = useState("gray");
   const [githubColor, setGithubColor] = useState("gray");
   const [gmailColor, setGmailColor] = useState("gray");
+  const [linkedIn, setLinkedIn] = useState("gray");
   const [gmailState, setGmailState] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -54,10 +55,12 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
             animate={{ opacity: 1, y: 0 }}
             href="https://www.facebook.com/giorgi.gochitidze.39/"
             target="_blank"
+            transition={{ delay: 0.1 }}
           >
             <FaFacebook
               size={30}
               color={facebookColor}
+              transition={{ delay: 0.2 }}
               onMouseEnter={() => setFacebookColor("white")}
               onMouseLeave={() => setFacebookColor("gray")}
             />
@@ -66,7 +69,22 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
           <motion.a
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
+            href="https://linkedin.com/in/giorgi-gochitidze-4839b9308"
+            target="_blank"
+          >
+            <FaLinkedin
+              size={30}
+              color={linkedIn}
+              onMouseEnter={() => setLinkedIn("white")}
+              onMouseLeave={() => setLinkedIn("gray")}
+            />
+          </motion.a>
+
+          <motion.a
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
             href="https://github.com/GiorgiGochitidze"
             target="_blank"
           >
@@ -120,17 +138,16 @@ const ShortInfo = ({ cvDownload, setCvDownload, hireMe, setHireMe }) => {
           </motion.button>
         </Link>
 
-        <motion.button
+        <motion.a
           initial={{ opacity: 0, x: 500 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
           className="cv-btn"
-          onClick={() =>
-            cvDownload ? setCvDownload(false) : setCvDownload(true)
-          }
+          href="/My_Resume.pdf"
+          download="/My_Resume.pdf"
         >
           Download CV
-        </motion.button>
+        </motion.a>
 
         <motion.div
           initial={{ opacity: 0, y: 200 }}

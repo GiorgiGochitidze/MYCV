@@ -83,6 +83,7 @@
     background: transparent;
     border: 1px solid #959595;
     border-radius: 8px;
+    display: flex;
     color: white;
     font-family: "Lato", sans-serif;
     font-weight: 500;
@@ -90,6 +91,7 @@
     justify-content: center;
     align-items: center;
     color: #959595;
+    text-decoration: none;
 }
 
 .cv-btn:hover{
