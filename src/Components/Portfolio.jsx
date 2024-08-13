@@ -8,6 +8,7 @@ import { TbPasswordUser } from "react-icons/tb";
 import planetsfactsite from "../assets/planetsfactsite.jpg";
 import { CiShop } from "react-icons/ci";
 import { PiPottedPlantLight } from "react-icons/pi";
+import logo from "../assets/logo.png";
 
 const Portfolio = () => {
   return (
@@ -26,14 +27,15 @@ const Portfolio = () => {
 
       <div className="portfolio-list">
         <div data-aos="fade-right" className="portfolio-card">
-          <PiPottedPlantLight size={50} color="white" />
-
-          <h3>GreenMind</h3>
+          <img style={{ width: "70px" }} src={logo} alt="logo" />
+          <h3>Web Canvas</h3>
 
           <p>In Progress</p>
 
           <p>
-            This is a online Plants Shop where you can by different plants. find best plants with our services
+            My Own Company Web Canvas is an emerging startup offering a unique online platform
+            offering fully ready made websites. users can easily customize and
+            purchashe complete, functional websites tailored to their needs.
           </p>
 
           <a target="_blank" href="https://greenmindgeo.netlify.app/">
@@ -41,12 +43,29 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos="fade-right" className="portfolio-card">
+        <div data-aos-delay="200" data-aos="fade-right" className="portfolio-card">
+          <PiPottedPlantLight size={50} color="white" />
+
+          <h3>GreenMind</h3>
+
+          <p>In Progress</p>
+
+          <p>
+            This is a online Plants Shop where you can by different plants. find
+            best plants with our services
+          </p>
+
+          <a target="_blank" href="https://greenmindgeo.netlify.app/">
+            Open
+          </a>
+        </div>
+
+        <div data-aos-delay="300" data-aos="fade-right" className="portfolio-card">
           <MdModeOfTravel size={50} color="white" />
 
           <h3>TravelPulse</h3>
 
-          <p>In Progress</p>
+          <p>Paused</p>
 
           <p>
             Here you can share and view a stories about travel beautiful places
@@ -58,7 +77,7 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos="fade-right" className="portfolio-card">
+        <div data-aos="fade-left" className="portfolio-card">
           <img
             style={{ width: "100%", marginTop: "-15px" }}
             src={planetsfactsite}
@@ -78,8 +97,8 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-down"
-          data-aos-delay="100"
+          data-aos="fade-left"
+          data-aos-delay="200"
           className="portfolio-card"
         >
           <CiShop size={50} color="white" />
@@ -98,8 +117,8 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-down"
-          data-aos-delay="100"
+          data-aos="fade-left"
+          data-aos-delay="300"
           className="portfolio-card"
         >
           <CiShop size={50} color="white" />
@@ -117,8 +136,7 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-down"
-          data-aos-delay="100"
+          data-aos="fade-right"
           className="portfolio-card"
         >
           <GrLanguage size={50} color="white" />
@@ -136,8 +154,8 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-left"
-          data-aos-delay="150"
+          data-aos="fade-right"
+          data-aos-delay="200"
           className="portfolio-card"
         >
           <GiTicTacToe size={50} color="white" />
@@ -153,7 +171,7 @@ const Portfolio = () => {
 
         <div
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="300"
           className="portfolio-card"
         >
           <SlCalculator size={50} color="white" />
@@ -167,7 +185,7 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos="fade-in" data-aos-delay="250" className="portfolio-card">
+        <div data-aos="fade-left" className="portfolio-card">
           <IoIosFootball size={50} color="white" />
 
           <h3>Ball Challange (old)</h3>
@@ -183,7 +201,7 @@ const Portfolio = () => {
 
         <div
           data-aos="fade-left"
-          data-aos-delay="300"
+          data-aos-delay="200"
           className="portfolio-card"
         >
           <MdLogin size={50} color="white" />
@@ -198,8 +216,8 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-right"
-          data-aos-delay="350"
+          data-aos="fade-left"
+          data-aos-delay="300"
           className="portfolio-card"
         >
           <TbPasswordUser size={50} color="white" />

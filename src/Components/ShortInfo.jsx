@@ -101,6 +101,7 @@ const ShortInfo = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             href="#"
+            className="gmail-a-container"
           >
             <SiGmail
               size={30}
@@ -114,17 +115,17 @@ const ShortInfo = () => {
                 setGmailState(false);
               }}
             />
-          </motion.a>
-
           {gmailState && (
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="gamil-container"
+              className="gmail-container"
             >
               giorgigochitidze555@gmail.com
             </motion.div>
           )}
+          </motion.a>
+
         </div>
 
         <Link to="contactMe" smooth={true} duration={800} offset={-80}>
@@ -161,7 +162,7 @@ const ShortInfo = () => {
           </p>
           <hr />
           <p>
-            <span style={{ color: "#FD6F00" }}>12</span> <br /> <br />
+            <span style={{ color: "#FD6F00" }}>13</span> <br /> <br />
             <span style={{ color: "#DFDFDF" }}>Projects Done</span>
           </p>
         </motion.div>

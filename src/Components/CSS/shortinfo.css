@@ -63,7 +63,7 @@
     position: relative;
 }
 
-.gamil-container{
+.gmail-container{
     width: 300px;
     height: 20px;
     position: absolute;
@@ -72,9 +72,9 @@
     padding: 10px;
     border-radius: 20px;
     color: white;
-    left: 40px;
+    left: 50%;
+    transform: translateX(-50%) !important;
     text-align: center;
-    bottom: -30px;
 }
 
 .cv-btn{
@@ -178,6 +178,10 @@
     background-color: #E46400;
 }
 
+.gmail-a-container{
+    position: relative;
+}
+
 @media screen and (max-width: 900px){
 
     .experience-projects-container{
@@ -205,14 +209,11 @@
         padding: 0;
     }
 
-    .gamil-container{
-        width: 100%;
+    .gmail-container{
+        width: auto;
         height: 40px;
-        top: 100px;
-        left: 0;
-        bottom: -30px;
+        top: 40px;
         box-sizing: border-box;
-        word-break: break-all;
     }
 }
 
@@ -226,6 +227,14 @@
 
     .image-container img{
         width: 90%;
+    }
+
+    .gmail-a-container{
+        position: unset;
+    }
+
+    .gmail-container{
+        top: 80px;
     }
 }
 
@@ -243,8 +252,11 @@
 
 @media screen and (max-width: 288px) {
 
-    .gamil-container{
+    .gmail-container{
         height: auto;
+        width: 90%;
+        word-break: break-all;
+        top: 100px;
     }
 
     .socialLinks-container{
