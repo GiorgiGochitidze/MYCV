@@ -33,12 +33,12 @@ const Portfolio = () => {
           <p>In Progress</p>
 
           <p>
-            My Own Company Web Canvas is an emerging startup offering a unique online platform
+            My Own Company Web Canvas is an emerging startup offering a unique online platform,
             offering fully ready made websites. users can easily customize and
             purchashe complete, functional websites tailored to their needs.
           </p>
 
-          <a target="_blank" href="https://greenmindgeo.netlify.app/">
+          <a target="_blank" href="https://webcanvasgeo.netlify.app/">
             Open
           </a>
         </div>
