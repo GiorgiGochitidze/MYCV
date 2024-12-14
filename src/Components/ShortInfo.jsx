@@ -157,12 +157,12 @@ const ShortInfo = () => {
           className="experience-projects-container"
         >
           <p>
-            <span style={{ color: "#FD6F00" }}>1.6+</span> <br /> <br />
+            <span style={{ color: "#FD6F00" }}>2</span> <br /> <br />
             <span style={{ color: "#DFDFDF" }}>Years Experience</span>
           </p>
           <hr />
           <p>
-            <span style={{ color: "#FD6F00" }}>13</span> <br /> <br />
+            <span style={{ color: "#FD6F00" }}>12</span> <br /> <br />
             <span style={{ color: "#DFDFDF" }}>Projects Done</span>
           </p>
         </motion.div>

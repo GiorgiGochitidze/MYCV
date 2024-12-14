@@ -7,7 +7,6 @@ import { Md123, MdLogin, MdModeOfTravel } from "react-icons/md";
 import { TbPasswordUser } from "react-icons/tb";
 import planetsfactsite from "../assets/planetsfactsite.jpg";
 import { CiShop } from "react-icons/ci";
-import { PiPottedPlantLight } from "react-icons/pi";
 import logo from "../assets/logo.png";
 
 const Portfolio = () => {
@@ -43,19 +42,22 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos-delay="200" data-aos="fade-right" className="portfolio-card">
-          <PiPottedPlantLight size={50} color="white" />
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          className="portfolio-card"
+        >
+          <CiShop size={50} color="white" />
 
-          <h3>GreenMind</h3>
-
-          <p>In Progress</p>
+          <h3>MelinaMShop</h3>
 
           <p>
-            This is a online Plants Shop where you can by different plants. find
-            best plants with our services
+            A website for selling restaurant products and more, made on MERN
+            Stack <br />
+            Launched in 01.05.2024
           </p>
 
-          <a target="_blank" href="https://greenmindgeo.netlify.app/">
+          <a target="_blank" href="https://melinamshop.netlify.app/">
             Open
           </a>
         </div>
@@ -92,26 +94,6 @@ const Portfolio = () => {
           </p>
 
           <a target="_blank" href="https://planetsfactfromgio.netlify.app/">
-            Open
-          </a>
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          className="portfolio-card"
-        >
-          <CiShop size={50} color="white" />
-
-          <h3>MelinaMShop</h3>
-
-          <p>
-            A website for selling restaurant products and more, made on MERN
-            Stack <br />
-            Launched in 01.05.2024
-          </p>
-
-          <a target="_blank" href="https://melinamshop.netlify.app/">
             Open
           </a>
         </div>
