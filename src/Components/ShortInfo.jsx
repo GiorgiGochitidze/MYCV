@@ -38,15 +38,7 @@ const ShortInfo = () => {
           onMouseEnter={() => setExpanded(true)}
           onMouseLeave={() => setExpanded(false)}
         >
-          {!expanded && <span>MERN</span>}{" "}
-          <motion.span
-            initial={{ opacity: 0, width: 0 }}
-            animate={{ opacity: 1, width: "auto" }}
-            className={expanded ? "expanded" : "hidden"}
-          >
-            MongoDB, ExpressJS, React, NodeJS
-          </motion.span>{" "}
-          Stack Developer
+          <span>MERN Stack Developer</span>
         </motion.h1>
 
         <div className="socialLinks-container">
