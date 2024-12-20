@@ -18,7 +18,7 @@
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 50px;
     flex-wrap: wrap;
     align-self: flex-start;
@@ -26,6 +26,7 @@
 
 .portfolio-card{
     width: 300px;
+    min-height: 231px;
     height: auto;
     padding-block: 15px;
     background-color: #1E1E1E;
@@ -33,10 +34,12 @@
     overflow: hidden;
     text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
-    align-items: center;
+    position: relative;
 }
 
 .portfolio-card a{

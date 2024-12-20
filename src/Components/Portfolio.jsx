@@ -2,10 +2,8 @@ import { GrLanguage } from "react-icons/gr";
 import "./CSS/portfolio.css";
 import { GiTicTacToe } from "react-icons/gi";
 import { SlCalculator } from "react-icons/sl";
-import { IoIosFootball } from "react-icons/io";
-import { Md123, MdLogin, MdModeOfTravel } from "react-icons/md";
-import { TbPasswordUser } from "react-icons/tb";
-import planetsfactsite from "../assets/planetsfactsite.jpg";
+import { MdModeOfTravel } from "react-icons/md";
+import { LuEarth } from "react-icons/lu";
 import { CiShop } from "react-icons/ci";
 import logo from "../assets/logo.png";
 
@@ -33,8 +31,7 @@ const Portfolio = () => {
 
           <p>
             My Own Company Web Canvas is an emerging startup offering a unique online platform,
-            offering fully ready made websites. users can easily customize and
-            purchashe complete, functional websites tailored to their needs.
+            offering fully ready made websites.
           </p>
 
           <a target="_blank" href="https://webcanvasgeo.netlify.app/">
@@ -43,7 +40,7 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="200"
           className="portfolio-card"
         >
@@ -62,7 +59,7 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos-delay="300" data-aos="fade-right" className="portfolio-card">
+        <div data-aos-delay="300" data-aos="fade-left" className="portfolio-card">
           <MdModeOfTravel size={50} color="white" />
 
           <h3>TravelPulse</h3>
@@ -79,12 +76,8 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos="fade-left" className="portfolio-card">
-          <img
-            style={{ width: "100%", marginTop: "-15px" }}
-            src={planetsfactsite}
-            alt="planets fact size img"
-          />
+        <div data-aos="fade-right" className="portfolio-card">
+        <LuEarth size={50} color="white"  />
 
           <h3>Planets Fact Site</h3>
 
@@ -99,26 +92,7 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-left"
-          data-aos-delay="300"
-          className="portfolio-card"
-        >
-          <CiShop size={50} color="white" />
-
-          <h3>NaziSHop</h3>
-
-          <p>
-            A website for selling jewelry's and more, made on MERN Stack
-            Launched in 31.04.2024
-          </p>
-
-          <a target="_blank" href="https://nazishop.netlify.app/">
-            Open
-          </a>
-        </div>
-
-        <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="portfolio-card"
         >
           <GrLanguage size={50} color="white" />
@@ -136,7 +110,7 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-delay="200"
           className="portfolio-card"
         >
@@ -144,7 +118,7 @@ const Portfolio = () => {
 
           <h3>Tic Tac Toe</h3>
 
-          <p>Tic Tac Toe Game</p>
+          <p>Tic Tac Toe Game, you can play it with your friends, enjoy the game.</p>
 
           <a target="_blank" href="https://tictactoefromgio.netlify.app/">
             Open
@@ -152,7 +126,7 @@ const Portfolio = () => {
         </div>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-delay="300"
           className="portfolio-card"
         >
@@ -167,63 +141,6 @@ const Portfolio = () => {
           </a>
         </div>
 
-        <div data-aos="fade-left" className="portfolio-card">
-          <IoIosFootball size={50} color="white" />
-
-          <h3>Ball Challange (old)</h3>
-
-          <p>
-            A ball challange where u can undo and redo balls orientated on logic
-          </p>
-
-          <a target="_blank" href="https://ballchallangebygio.netlify.app/">
-            Open
-          </a>
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          className="portfolio-card"
-        >
-          <MdLogin size={50} color="white" />
-
-          <h3>Registration And LogIn Form</h3>
-
-          <p>Registration and log in form orientated on logic</p>
-
-          <a target="_blank" href="https://regloginfromgio.netlify.app/">
-            Open
-          </a>
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-delay="300"
-          className="portfolio-card"
-        >
-          <TbPasswordUser size={50} color="white" />
-
-          <h3>Random Password Generator</h3>
-
-          <p>Here You Can Generate Random Passwords</p>
-
-          <a target="_blank" href="https://rndpasswordgenerator.netlify.app/">
-            Open
-          </a>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="400" className="portfolio-card">
-          <Md123 size={50} color="white" />
-
-          <h3>Random Number Generator</h3>
-
-          <p>Here You Can Generate Random Numbers</p>
-
-          <a target="_blank" href="https://rndnumbergen.netlify.app/">
-            Open
-          </a>
-        </div>
       </div>
     </div>
   );

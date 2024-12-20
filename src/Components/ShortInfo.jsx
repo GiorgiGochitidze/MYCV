@@ -154,7 +154,7 @@ const ShortInfo = () => {
           </p>
           <hr />
           <p>
-            <span style={{ color: "#FD6F00" }}>12</span> <br /> <br />
+            <span style={{ color: "#FD6F00" }}>7</span> <br /> <br />
             <span style={{ color: "#DFDFDF" }}>Projects Done</span>
           </p>
         </motion.div>
