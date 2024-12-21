@@ -26,7 +26,7 @@ const AboutMe = () => {
             data-aos-delay="250"
             className="aboutme-text"
           >
-            Hi, I'm Giorgi, a MERN Stack developer with 1.6 years of programming
+            Hi, I'm Giorgi, a MERN Stack developer with 2 years of programming
             experience. Proficient in MERN Stack (MongoDB, ExpressJS, React,
             NodeJS), React, JavaScript, HTML, CSS, Python, NodeJS, Netlify, Git,
             Github, Render.com(for hosting backend server), Photoshop CS6,
